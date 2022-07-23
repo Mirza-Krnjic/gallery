@@ -130,6 +130,7 @@ span.text-red {
 
 .hero-banner-container {
   padding: 100px 40px;
+  border-radius: 10px;
   background-color: #dcdcdc;
   background-image: url("../images/main-image.png");
   background-size: cover;
@@ -416,7 +417,7 @@ span.text-red {
 }
 
 .product-detail-image {
-  border-radius: 15px;
+  border-radius: 5px;
   background-color: #ebebeb;
 
   width: 400px;
@@ -672,8 +673,8 @@ span.text-red {
     flex-wrap: wrap;
   }
   .product-detail-container .product-detail-image {
-    width: 350px;
-    height: 350px;
+    width: 100%;
+    height: auto;
   }
   .cart-container {
     width: 415px;

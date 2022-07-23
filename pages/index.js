@@ -15,7 +15,6 @@ export default function Home({ products, bannerData }) {
         ))}
       </div>
       <FooterBanner footerBanner={bannerData && bannerData[0]} />
-      <Footer />
     </>
   )
 }
