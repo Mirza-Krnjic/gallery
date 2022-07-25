@@ -47,31 +47,9 @@ const ProductDetails = ({ product, products }) => {
 
         <div className="product-detail-desc">
           <h1>{name}</h1>
-          {/* <div className="reviews">
-            <div>
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiFillStar />
-              <AiOutlineStar />
-            </div>
-            <p>(20)</p>
-          </div> */}
           <h4>Detaljno: </h4>
           <p>{details}</p>
           <p className="price">{price} EUR</p>
-          {/* <div className="quantity">
-            <h3>Kvantitet:</h3>
-            <p className="quantity-desc">
-              <span className="minus" onClick={console.log("incrase")}>
-                <AiOutlineMinus />
-              </span>
-              <span className="num">69</span>
-              <span className="plus" onClick={console.log("decrase")}>
-                <AiOutlinePlus />
-              </span>
-            </p>
-          </div> */}
           <div style={{ marginTop: "25px" }}>
             <strong>Dimenzije: </strong>
             <span>{width}</span>
@@ -86,11 +64,7 @@ const ProductDetails = ({ product, products }) => {
             >
               Dodaj u korpu
             </button>
-            <button
-              type="button"
-              className="buy-now"
-              onClick={console.log(handleBuyNow)}
-            >
+            <button type="button" className="buy-now" onClick={handleBuyNow}>
               Kupi
             </button>
           </div>
@@ -139,8 +113,6 @@ export const getStaticProps = async ({ params: { slug } }) => {
 
   const product = await client.fetch(query)
   const products = await client.fetch(productsQuery)
-
-  console.log(product)
 
   return {
     props: { products, product },
