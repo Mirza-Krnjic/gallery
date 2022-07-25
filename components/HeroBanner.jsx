@@ -18,15 +18,12 @@ function HeroBanner({ heroBanner }) {
           className="hero-banner-image"
         /> */}
         <div>
-          <Link href={`product/${heroBanner.product}`}>
+          {/* <Link href={`product/${heroBanner.product}`}>
             <button type="button">button text</button>
-          </Link>
+          </Link> */}
           <div className="desc">
-            <h5 style={{ color: "white" }}>Opis:</h5>
-            <p style={{ color: "white" }}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit.
-              Voluptatem, nesciunt?
-            </p>
+            <h5 style={{ color: "white" }}>Kontak telefon:</h5>
+            <p style={{ color: "white" }}>+387 63 346 181</p>
           </div>
         </div>
       </div>

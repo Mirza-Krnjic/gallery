@@ -17,6 +17,7 @@ a {
 }
 
 .main-container {
+  padding-top: 60px;
   max-width: 1400px;
   margin: auto;
   width: 100%;
@@ -27,10 +28,20 @@ a {
 }
 
 .navbar-container {
+  z-index: 10000;
+  position: fixed;
+  /* margin-bottom: 50px; */
+  width: 100%;
+  left: 0;
+  top: 0;
   display: flex;
   justify-content: space-between;
-  margin: 6px 18px;
-  position: relative;
+  margin: 0 auto;
+  padding: 8px 10px;
+  /* padding-top: 20px; */
+  background-color: rgba(32, 178, 171, 0.88);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 .marquee-text {
   font-size: 29px;
@@ -69,12 +80,18 @@ span.text-red {
   margin-left: 6px;
 }
 .logo {
-  color: gray;
+  color: black;
   font-size: 18px;
+  margin: auto 5px;
+  justify-items: center;
+  align-content: center;
+  align-items: center;
 }
 .cart-icon {
   font-size: 25px;
-  color: gray;
+  color: white;
+  margin: 0 10px;
+  padding-top: 5px;
   cursor: pointer;
   position: relative;
   transition: transform 0.4s ease;
@@ -86,6 +103,7 @@ span.text-red {
 }
 .cart-item-qty {
   position: absolute;
+  padding-top: 1px;
   right: -8px;
   font-size: 12px;
   color: #eee;
@@ -133,7 +151,7 @@ span.text-red {
   padding: 100px 40px;
   border-radius: 10px;
   background-color: #dcdcdc;
-  background-image: url("../images/main-image.png");
+  background-image: url("../images/main-img.jpeg");
   background-size: cover;
   background-position: center;
   z-index: -50;
@@ -213,7 +231,7 @@ span.text-red {
 }
 .footer-banner-container {
   padding: 100px 40px;
-  background-color: #f02d34;
+  background-color: rgb(0, 126, 120);
   border-radius: 15px;
   position: relative;
   height: 400px;
