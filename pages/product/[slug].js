@@ -8,18 +8,18 @@ import {
 
 import { client, urlFor } from "../../lib/client"
 import { Product } from "../../components"
-// import { useStateContext } from "../../context/StateContext"
+import { useStateContext } from "../../context/StateContext"
 
 const ProductDetails = ({ product, products }) => {
-  const { image, name, details, price } = product
+  const { image, name, details, price, width, height } = product
   const [index, setIndex] = useState(0)
-  //   const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext()
+  const { decQty, incQty, qty, onAdd, setShowCart } = useStateContext()
 
-  //   const handleBuyNow = () => {
-  //     onAdd(product, qty)
+  const handleBuyNow = () => {
+    onAdd(product, qty)
 
-  //     setShowCart(true)
-  //   }
+    setShowCart(true)
+  }
 
   return (
     <div>
@@ -59,8 +59,8 @@ const ProductDetails = ({ product, products }) => {
           </div> */}
           <h4>Detaljno: </h4>
           <p>{details}</p>
-          <p className="price">{price} KM</p>
-          <div className="quantity">
+          <p className="price">{price} EUR</p>
+          {/* <div className="quantity">
             <h3>Kvantitet:</h3>
             <p className="quantity-desc">
               <span className="minus" onClick={console.log("incrase")}>
@@ -71,19 +71,25 @@ const ProductDetails = ({ product, products }) => {
                 <AiOutlinePlus />
               </span>
             </p>
+          </div> */}
+          <div style={{ marginTop: "25px" }}>
+            <strong>Dimenzije: </strong>
+            <span>{width}</span>
+            {" x "}
+            <span>{height}</span>
           </div>
           <div className="buttons">
             <button
               type="button"
               className="add-to-cart"
-              onClick={() => console.log("add to cart")}
+              onClick={() => onAdd(product, qty)}
             >
               Dodaj u korpu
             </button>
             <button
               type="button"
               className="buy-now"
-              onClick={console.log("handle buy")}
+              onClick={console.log(handleBuyNow)}
             >
               Kupi
             </button>
