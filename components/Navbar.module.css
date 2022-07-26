@@ -1,0 +1,41 @@
+.hamburger-menu {
+  display: none !important;
+}
+
+.nav-el {
+  font-size: 20px;
+  cursor: pointer;
+  margin: 0 20px;
+  padding: 10px 20px;
+}
+.nav-el:hover {
+  transition: 0.1s all;
+  background-color: white;
+  border-radius: 30px;
+}
+.nav-el li {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+.nav-el li svg {
+  font-size: 25px;
+  margin-right: 5px;
+}
+
+@media screen and (max-width: 1320px) {
+  .logo {
+    display: none;
+  }
+  .nav-el-container {
+    display: none !important;
+  }
+  .hamburger-menu {
+    display: block !important;
+    font-size: 35px;
+    margin-left: 5px;
+    align-self: center;
+    color: white;
+    padding-top: 5px;
+  }
+}

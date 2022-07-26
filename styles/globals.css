@@ -21,7 +21,7 @@ a {
 }
 
 .main-container {
-  padding-top: 60px;
+  padding-top: 100px;
   max-width: 1400px;
   margin: auto;
   width: 100%;
@@ -84,16 +84,14 @@ span.text-red {
   margin-left: 6px;
 }
 .logo {
-  color: black;
-  font-size: 18px;
-  margin: 0 5px;
+  margin-left: 5px;
   padding-top: 4px;
   justify-items: center;
   align-content: center;
   align-items: center;
 }
 .cart-icon {
-  font-size: 25px;
+  font-size: 35px;
   color: white;
   margin: 0 10px;
   padding-top: 5px;
@@ -970,5 +968,11 @@ span.text-red {
   }
   .btn {
     width: 200px;
+  }
+}
+
+@media screen and (max-width: 1320px) {
+  .logo {
+    display: none;
   }
 }

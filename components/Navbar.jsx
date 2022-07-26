@@ -1,27 +1,64 @@
-import React from "react"
+import React, { useState } from "react"
 import Link from "next/link"
 import { AiOutlineShopping } from "react-icons/ai"
 import { GiHamburgerMenu } from "react-icons/gi"
 
 import { Cart } from "./"
+import MobileMenu from "./MobileMenu"
 import { useStateContext } from "../context/StateContext"
 import Logo from "../images/galerija-logo.png"
 import Image from "next/image"
 
+import { NavbarData } from "./NavbarData"
+import styles from "./Navbar.module.css"
+
 const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext()
+  const [showSidemenu, setShowSidemenu] = useState(false)
+
+  const toggleMobileMenu = () => {
+    setShowSidemenu(!showSidemenu)
+  }
 
   return (
-    <div className="navbar-container">
-      <div style={{ display: "flex", alignItems: "center" }}>
-        <div className="logo">
-          <Link href="/">
-            <Image src={Logo} width="150px" height="30px" alt="/" />
-          </Link>
-        </div>
-        <div>
-          <GiHamburgerMenu />
-        </div>
+    <nav className="navbar-container">
+      <div className="logo">
+        <Link href="/home2">
+          <Image src={Logo} width="300px" height="60px" alt="/" />
+        </Link>
+      </div>
+      {/* Computer view: Navigation items */}
+      <div
+        className={styles["nav-el-container"]}
+        style={{
+          display: "flex",
+          alignItems: "center",
+          margin: "0 auto",
+          paddingRight: "100px",
+        }}
+      >
+        {NavbarData.map((navEl, index) => {
+          return (
+            <div className={styles["nav-el"]}>
+              <Link href={navEl.path}>
+                <li key={index}>
+                  {navEl.icon}
+                  <span>{navEl.title}</span>
+                </li>
+              </Link>
+            </div>
+          )
+        })}
+      </div>
+
+      {/* Mobile view: Hamburger Menu */}
+      <div className={styles["hamburger-menu"]}>
+        <GiHamburgerMenu
+          onClick={() => {
+            setShowSidemenu(!showSidemenu)
+            console.log(showSidemenu)
+          }}
+        />
       </div>
 
       <button
@@ -34,7 +71,8 @@ const Navbar = () => {
       </button>
 
       {showCart && <Cart />}
-    </div>
+      {showSidemenu && <MobileMenu toggle={toggleMobileMenu} />}
+    </nav>
   )
 }
 
