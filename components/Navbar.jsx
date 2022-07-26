@@ -1,18 +1,28 @@
 import React from "react"
 import Link from "next/link"
 import { AiOutlineShopping } from "react-icons/ai"
+import { GiHamburgerMenu } from "react-icons/gi"
 
 import { Cart } from "./"
 import { useStateContext } from "../context/StateContext"
+import Logo from "../images/galerija-logo.png"
+import Image from "next/image"
 
 const Navbar = () => {
   const { showCart, setShowCart, totalQuantities } = useStateContext()
 
   return (
     <div className="navbar-container">
-      <p className="logo">
-        <Link href="/">Galerija Radovan</Link>
-      </p>
+      <div style={{ display: "flex", alignItems: "center" }}>
+        <div className="logo">
+          <Link href="/">
+            <Image src={Logo} width="150px" height="30px" alt="/" />
+          </Link>
+        </div>
+        <div>
+          <GiHamburgerMenu />
+        </div>
+      </div>
 
       <button
         type="button"

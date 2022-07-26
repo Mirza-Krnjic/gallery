@@ -16,6 +16,10 @@ a {
   text-decoration: none;
 }
 
+:root {
+  --main-color: rgb(0, 126, 120);
+}
+
 .main-container {
   padding-top: 60px;
   max-width: 1400px;
@@ -28,7 +32,7 @@ a {
 }
 
 .navbar-container {
-  z-index: 10000;
+  z-index: 100;
   position: fixed;
   /* margin-bottom: 50px; */
   width: 100%;
@@ -82,7 +86,8 @@ span.text-red {
 .logo {
   color: black;
   font-size: 18px;
-  margin: auto 5px;
+  margin: 0 5px;
+  padding-top: 4px;
   justify-items: center;
   align-content: center;
   align-items: center;
@@ -173,7 +178,7 @@ span.text-red {
   font-size: 18px;
   font-weight: 500;
   cursor: pointer;
-  z-index: 10000 !important;
+  z-index: 100 !important;
 }
 
 .hero-banner-container h3 {
@@ -506,12 +511,13 @@ span.text-red {
 }
 .buttons .add-to-cart {
   padding: 10px 20px;
-  border: 1px solid rgb(63, 7, 215);
+  border: 1px solid var(--main-color);
+  border-radius: 30px;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
   background-color: white;
-  color: rgb(63, 7, 215);
+  color: var(--main-color);
   cursor: pointer;
   width: 200px;
   transform: scale(1, 1);
@@ -524,9 +530,10 @@ span.text-red {
   width: 200px;
 
   padding: 10px 20px;
-  background-color: rgb(63, 7, 215);
+  background-color: var(--main-color);
   color: white;
   border: none;
+  border-radius: 30px;
   margin-top: 40px;
   font-size: 18px;
   font-weight: 500;
@@ -559,11 +566,11 @@ span.text-red {
 }
 
 .maylike-products-wrapper {
-  margin-top: 120px;
+  margin-top: 70px;
 }
 .maylike-products-wrapper h2 {
   text-align: center;
-  margin: 50px;
+  margin: 40px;
   color: #324d67;
 
   font-size: 28px;
@@ -572,7 +579,7 @@ span.text-red {
   display: flex;
   justify-content: center;
   gap: 15px;
-  margin-top: 20px;
+  margin-top: 5px;
 }
 .max-qty {
   font-weight: 500;
@@ -684,7 +691,7 @@ span.text-red {
   }
   .hero-banner-container button {
     margin-top: 90px;
-    z-index: 10000;
+    z-index: 1000;
   }
   .desc {
     bottom: 60px;
@@ -841,7 +848,7 @@ span.text-red {
     height: auto;
   }
   .cart-container {
-    width: 415px;
+    width: 100%;
     padding: 4px;
   }
   .cart-heading {
@@ -852,6 +859,8 @@ span.text-red {
   }
   .product {
     padding: 20px 5px;
+    align-content: space-around;
+    padding-left: 20px;
   }
   .product .cart-product-image {
     width: 25%;
@@ -948,9 +957,18 @@ span.text-red {
     /* width: 200px; */
     flex-wrap: wrap;
   }
-}
-
-.dimentions {
-  /* font: bold !important; */
-  /* background-color: red; */
+  .product-container {
+    gap: 3px;
+    padding: 0;
+    flex-wrap: wrap;
+  }
+  .quantity-desc {
+    display: none;
+  }
+  .item-desc .flex {
+    width: 170px;
+  }
+  .btn {
+    width: 200px;
+  }
 }
