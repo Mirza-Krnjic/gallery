@@ -13,7 +13,7 @@ function MobileMenu({ toggle }) {
       <div className={styles["mobile-menu-items"]}>
         {NavbarData.map((navEl, index) => {
           return (
-            <div className={styles["nav-el"]}>
+            <div className={styles["nav-el"]} onClick={() => toggle()}>
               <Link href={navEl.path}>
                 <li key={index}>
                   {navEl.icon}

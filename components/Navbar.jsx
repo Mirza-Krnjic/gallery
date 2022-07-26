@@ -23,8 +23,8 @@ const Navbar = () => {
   return (
     <nav className="navbar-container">
       <div className="logo">
-        <Link href="/home2">
-          <Image src={Logo} width="300px" height="60px" alt="/" />
+        <Link href="/">
+          <Image src={Logo} width="220px" height="40px" alt="/" />
         </Link>
       </div>
       {/* Computer view: Navigation items */}
@@ -56,7 +56,6 @@ const Navbar = () => {
         <GiHamburgerMenu
           onClick={() => {
             setShowSidemenu(!showSidemenu)
-            console.log(showSidemenu)
           }}
         />
       </div>

@@ -1,5 +1,6 @@
 import { AiFillHome } from "react-icons/ai"
 import { BiPaint, BiUserCircle, BiBookAlt, BiMailSend } from "react-icons/bi"
+import { GiWoodFrame } from "react-icons/gi"
 
 export const NavbarData = [
   {
@@ -15,15 +16,15 @@ export const NavbarData = [
     className: "class-text",
   },
   {
-    title: "Umjetnici",
-    path: "/umjetnici",
-    icon: <BiUserCircle />,
+    title: "Okviri",
+    path: "/okviri",
+    icon: <GiWoodFrame />,
     className: "class-text",
   },
   {
-    title: "O nama",
-    path: "/o-nama",
-    icon: <BiBookAlt />,
+    title: "Umjetnici",
+    path: "/umjetnici",
+    icon: <BiUserCircle />,
     className: "class-text",
   },
   {
