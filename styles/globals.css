@@ -388,9 +388,12 @@ span.text-red {
   border-radius: 15px;
   background-color: #ebebeb;
 }
+.item-desc {
+  margin: auto 0;
+}
 .item-desc .flex {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 350px;
   color: #324d67;
 }
