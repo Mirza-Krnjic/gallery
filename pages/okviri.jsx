@@ -22,8 +22,9 @@ function okviri({ okvirData }) {
             stvoriti remek djelo uz pomoć okvira!
           </p>
         </div>
-        {okvirData.map((okvir) => (
+        {okvirData.map((okvir, index) => (
           <Okvir
+            key={index}
             broj={okvir.broj}
             boja={okvir.boja}
             visina={okvir.visina}

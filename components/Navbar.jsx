@@ -39,9 +39,9 @@ const Navbar = () => {
       >
         {NavbarData.map((navEl, index) => {
           return (
-            <div className={styles["nav-el"]}>
+            <div className={styles["nav-el"]} key={index}>
               <Link href={navEl.path}>
-                <li key={index}>
+                <li>
                   {navEl.icon}
                   <span>{navEl.title}</span>
                 </li>
