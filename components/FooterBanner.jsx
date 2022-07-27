@@ -1,30 +1,14 @@
 import React from "react"
-import Link from "next/link"
-import Logo from "../images/galerija-logo.png"
 import Image from "next/image"
 
-import { urlFor } from "../lib/client"
+import Logo from "../images/galerija-logo.png"
+import Interier from "../images/interier.jpeg"
 
-const FooterBanner = ({
-  footerBanner: {
-    discount,
-    largeText1,
-    largeText2,
-    saleTime,
-    smallText,
-    midText,
-    desc,
-    product,
-    buttonText,
-    image,
-  },
-}) => {
+const FooterBanner = () => {
   return (
     <div className="footer-banner-container">
-      {/* <div> */}
       <Image src={Logo} width="300px" height="60px" alt="/" />
-      <img src={urlFor(image)} className="footer-image" />
-      {/* </div> */}
+      <Image src={Interier} className="footer-image" />
       <div
         style={{
           display: "flex",

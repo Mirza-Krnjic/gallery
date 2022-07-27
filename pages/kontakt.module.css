@@ -1,0 +1,49 @@
+.container {
+  --main-color: rgb(0, 126, 120);
+}
+
+.container {
+  max-width: 750px;
+  margin: 0 auto;
+  padding: 0 10px;
+  color: #324d67;
+}
+.container h2 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+.container p {
+  font-size: 16px;
+  font-weight: 200;
+  margin-bottom: 10px;
+}
+.container h4 {
+  margin-bottom: 15px;
+}
+.buttons {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+.buttons a {
+  background-color: transparent;
+  border: 1px solid black;
+  border-radius: 30px;
+  padding: 5px 10px;
+  cursor: pointer;
+  font-size: 20px;
+}
+.button:hover {
+  transform: scale(110%);
+  background-color: var(--main-color);
+  color: white;
+  transition: all 0.3s;
+}
+
+@media screen and (max-width: 450px) {
+  .buttons a {
+    font-size: 17px;
+  }
+}

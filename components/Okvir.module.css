@@ -1,0 +1,12 @@
+.container {
+  margin: 50px 0;
+}
+.about {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+  padding: 10px 0;
+}
+.image {
+  max-width: 100%;
+}

@@ -21,12 +21,12 @@ export const NavbarData = [
     icon: <GiWoodFrame />,
     className: "class-text",
   },
-  {
-    title: "Umjetnici",
-    path: "/umjetnici",
-    icon: <BiUserCircle />,
-    className: "class-text",
-  },
+  // {
+  //   title: "Umjetnici",
+  //   path: "/umjetnici",
+  //   icon: <BiUserCircle />,
+  //   className: "class-text",
+  // },
   {
     title: "Kontakt",
     path: "/kontakt",
