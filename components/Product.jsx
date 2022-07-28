@@ -11,7 +11,7 @@ const Product = ({ product: { image, name, slug, price } }) => {
           <img
             src={urlFor(image && image[0])}
             style={{
-              width: "fit-content",
+              // width: "fit-content",
               height: "250px",
               borderRadius: "5px",
             }}
