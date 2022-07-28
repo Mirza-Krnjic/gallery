@@ -11,7 +11,7 @@ export const NavbarData = [
   },
   {
     title: "Galerija",
-    path: "/galerija",
+    path: "/Galerija",
     icon: <BiPaint />,
     className: "class-text",
   },

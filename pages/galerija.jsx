@@ -1,11 +1,11 @@
 import React from "react"
 import { client } from "../lib/client"
 import { Product } from "../components"
-import { useState } from "react"
 import ReactPaginate from "react-paginate"
-import styles from "./galerija.module.css"
+import styles from "./Galerija.module.css"
+import { useState } from "react"
 
-function galerija({ products }) {
+function Galerija({ products }) {
   const [pageNumer, setPageNumber] = useState(0)
   const usersPerPage = 10
   const pagesVisited = pageNumer * usersPerPage
@@ -78,4 +78,4 @@ export const getServerSideProps = async () => {
   }
 }
 
-export default galerija
+export default Galerija
