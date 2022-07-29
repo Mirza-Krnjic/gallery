@@ -6,7 +6,7 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { Cart } from "./"
 import MobileMenu from "./MobileMenu"
 import { useStateContext } from "../context/StateContext"
-import Logo from "../images/galerija-logo.png"
+import Logo from "../images/galerija-logo.webp"
 import Image from "next/image"
 
 import { NavbarData } from "./NavbarData"
@@ -24,7 +24,7 @@ const Navbar = () => {
     <nav className="navbar-container">
       <div className="logo">
         <Link href="/">
-          <Image src={Logo} width="220px" height="40px" alt="/" />
+          <Image src={Logo} width="300px" height="40px" alt="/" />
         </Link>
       </div>
       {/* Computer view: Navigation items */}

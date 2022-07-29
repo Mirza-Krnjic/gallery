@@ -1,13 +1,13 @@
 import React from "react"
 import Image from "next/image"
 
-import Logo from "../images/galerija-logo.png"
+import Logo from "../images/galerija-logo.webp"
 import Interier from "../images/interier.jpeg"
 
 const FooterBanner = () => {
   return (
     <div className="footer-banner-container">
-      <Image src={Logo} width="300px" height="60px" alt="/" />
+      <Image src={Logo} width="300px" height="40px" alt="/" />
       <Image src={Interier} className="footer-image" />
       <div
         style={{
