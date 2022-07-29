@@ -8,6 +8,7 @@ export default function Home({ products, bannerData }) {
     <>
       <HeroBanner heroBanner={bannerData.length && bannerData[0]} />
       <div className="products-heading">
+        <div></div>
         <h2>Najpopularnije slike</h2>
         <p>Razni umjetnici i njihova djela</p>
       </div>
