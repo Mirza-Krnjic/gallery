@@ -1,6 +1,6 @@
 ## Galerija Radovan
 
-ECommerce React Application made for a local art gallery.
+ECommerce React Application made for an local art gallery.
 
 
 **Platform:** Web
