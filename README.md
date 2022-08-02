@@ -10,6 +10,6 @@ ECommerce React Application made for an local art gallery.
 #### `Available at:`
 
 ***URL:*** 
-[Galerija Radovan](https://galerija-radovan.netlify.app/)
+[Galerija Radovan](https://galerija-radovan.com/)
 
 <img src="https://mirzakrnjic.com/images/works/radovan2.webp" width="200">
